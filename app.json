@@ -12,17 +12,28 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you.",
+        "SKAdNetworkItems": [
+          {
+            "SKAdNetworkIdentifier": "v9wttpbfk9.skadnetwork"
+          },
+          {
+            "SKAdNetworkIdentifier": "n38lu8286q.skadnetwork"
+          }
+        ]
+      }
     },
     "android": {
+      "edgeToEdgeEnabled": true,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.makaay120.AFOApp"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +48,17 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "google": {
+        "androidClientId": "614382783696-7jaau6r07np0bord5h078jq6q147f8uk.apps.googleusercontent.com",
+        "iosClientId": "614382783696-okm0l285kqdetpmpni3fq0en6q1a9c7d.apps.googleusercontent.com",
+        "webClientId": "614382783696-pbdehd5hm30v70dj7t7rkud6jo7bqss6.apps.googleusercontent.com"
+      },
+      "router": {},
+      "eas": {
+        "projectId": "aa61fb33-928f-4f8b-9076-61fbb6330a90"
+      }
     }
   }
 }

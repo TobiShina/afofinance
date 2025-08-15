@@ -1,3 +1,4 @@
+// app/_layout.js
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useSegments, useRouter } from "expo-router";
@@ -18,8 +19,11 @@ function RootStack() {
     if (user && !inAuthGroup) {
       // User is logged in, navigate to main app
       router.replace("/(app)");
+    } else if (!user && inAuthGroup) {
+      // User is not logged in and is in the auth group, no need to navigate
+      // but if we were to show a login screen, this is where it would be.
     } else if (!user && !inAuthGroup) {
-      // User is not logged in, navigate to auth screens
+      // User is not logged in and is in the wrong group, navigate to auth screens
       router.replace("/(auth)");
     }
   }, [user, loading, segments, router]);
