@@ -14,6 +14,7 @@ import { useAuth } from "../../context/AuthContext";
 import { Picker } from "@react-native-picker/picker";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { CommonStyles } from "../../components/CommonStyles";
+import { Ionicons } from "@expo/vector-icons"
 
 const CURRENCIES = [
   { label: "Nigerian Naira (₦)", value: "NGN" },
@@ -30,7 +31,7 @@ export default function LoginPage() {
   } = useAuth();
   const [selectedCurrency, setSelectedCurrency] = useState("NGN");
   const [socialLoading, setSocialLoading] = useState(false);
-  const logo = require("../../assets/afo_logo.png");
+  const logo = require("../../assets/images/icon.png");
 
   const handleGoogleSignIn = async () => {
     setSocialLoading(true);
@@ -109,10 +110,7 @@ export default function LoginPage() {
         style={[styles.socialButton, styles.googleButton]}
         onPress={handleGoogleSignIn}
       >
-        <Image
-          source={require("../../assets/afo_logo.png")}
-          style={styles.socialIcon}
-        />
+        <Ionicons name="logo-google" size={24} color="#333" />
         <Text style={[styles.socialButtonText, styles.googleButtonText]}>
           Sign In with Google
         </Text>
@@ -122,10 +120,7 @@ export default function LoginPage() {
         style={[styles.socialButton, styles.facebookButton]}
         onPress={handleFacebookSignIn}
       >
-        <Image
-          source={require("../../assets/afo_logo.png")}
-          style={styles.socialIcon}
-        />
+        <Ionicons name="logo-facebook" size={27} color="#fff" />
         <Text style={[styles.socialButtonText, styles.facebookButtonText]}>
           Sign In with Facebook
         </Text>

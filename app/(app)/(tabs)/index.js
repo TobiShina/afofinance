@@ -6,7 +6,7 @@ import { CommonStyles } from "../../../components/CommonStyles"; // Assuming you
 
 export default function HomeScreen() {
   const router = useRouter();
-  const logo = require("../../../assets/afo_logo.png"); // You'll provide this logo
+  const logo = require("../../../assets/images/icon.png"); // You'll provide this logo
 
   const handleSelectAccountType = (type) => {
     router.push(`/sheets/${type}`);
