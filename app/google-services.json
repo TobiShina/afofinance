@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "614382783696",
+    "project_id": "afo-app-backend",
+    "storage_bucket": "afo-app-backend.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614382783696:android:087f311e211dc69b5222d5",
+        "android_client_info": {
+          "package_name": "com.makaay120.AFOApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614382783696-7jaau6r07np0bord5h078jq6q147f8uk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.makaay120.AFOApp",
+            "certificate_hash": "9cda7f00decb4377e0a119ad2e40f441acb32382"
+          }
+        },
+        {
+          "client_id": "614382783696-pbdehd5hm30v70dj7t7rkud6jo7bqss6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsyZyHgU35zjrW_E-z55sTglXSYjArvLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614382783696-cvc9rhtk9u42ekb1dlmenkcpavv1qcnn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "614382783696-okm0l285kqdetpmpni3fq0en6q1a9c7d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.makaay120.AFOApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
