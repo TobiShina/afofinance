@@ -23,17 +23,14 @@ export const AuthProvider = ({ children }) => {
 
   const [requestGoogle, responseGoogle, promptAsyncGoogle] =
     Google.useAuthRequest({
-      webClientId:
-        "614382783696-pbdehd5hm30v70dj7t7rkud6jo7bqss6.apps.googleusercontent.com",
-      androidClientId:
-        "614382783696-7jaau6r07np0bord5h078jq6q147f8uk.apps.googleusercontent.com",
-      iosClientId:
-        "614382783696-okm0l285kqdetpmpni3fq0en6q1a9c7d.apps.googleusercontent.com",
+      webClientId: process.env.GOOGLE_WEB_CLIENT_ID,
+      androidClientId: process.env.GOOGLE_ANDROID_CLIENT_ID,
+      iosClientId: process.env.GOOGLE_IOS_CLIENT_ID,
     });
 
   const [requestFacebook, responseFacebook, promptAsyncFacebook] =
     Facebook.useAuthRequest({
-      clientId: "1759118881663290",
+      clientId: process.env.FACEBOOK_APP_ID,
     });
 
   const createUserProfile = async (user) => {

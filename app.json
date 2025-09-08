@@ -41,6 +41,13 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      [
+        "expo-dotenv",
+        {
+          "path": "./.env"
+        }
+      ],
+
       "expo-router",
       "expo-font",
       "expo-web-browser",
@@ -55,6 +62,7 @@
         "iosClientId": "614382783696-okm0l285kqdetpmpni3fq0en6q1a9c7d.apps.googleusercontent.com",
         "webClientId": "614382783696-pbdehd5hm30v70dj7t7rkud6jo7bqss6.apps.googleusercontent.com"
       },
+      "facebookAppId": "1759118881663290",
       "router": {},
       "eas": {
         "projectId": "aa61fb33-928f-4f8b-9076-61fbb6330a90"

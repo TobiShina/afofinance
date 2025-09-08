@@ -14,7 +14,7 @@ import { useAuth } from "../../context/AuthContext";
 import { Picker } from "@react-native-picker/picker";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { CommonStyles } from "../../components/CommonStyles";
-import { Ionicons } from "@expo/vector-icons"
+import { Ionicons } from "@expo/vector-icons";
 
 const CURRENCIES = [
   { label: "Nigerian Naira (₦)", value: "NGN" },
@@ -85,8 +85,8 @@ export default function LoginPage() {
         <Image source={logo} style={CommonStyles.logo} resizeMode="contain" />
       </View>
 
-      <Text style={styles.welcomeText}>Welcome to AFO!</Text>
-      <Text style={styles.sloganText}>Your simple profit/loss calculator.</Text>
+      <Text style={styles.welcomeText}>AFO</Text>
+      <Text style={styles.sloganText}>Your profit/loss assistant.</Text>
 
       <View style={styles.currencySelectorContainer}>
         <Text style={styles.currencyLabel}>Select Your Default Currency:</Text>
